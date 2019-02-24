@@ -75,7 +75,7 @@ class Quote extends Component {
     const { data, isLoading, bookList, bookId } = this.state
     if (isLoading) return <LoaderVerses />
     return [
-      <h2 key="chapter">{data.reference.split(':')[0]}</h2>,
+      ...(data && data.reference ? <h2 key="chapter">{data.reference.split(':')[0]}</h2> : null),
       <BlockQuote key="quite">
         <div dangerouslySetInnerHTML={{ __html: data.content }} />
       </BlockQuote>,

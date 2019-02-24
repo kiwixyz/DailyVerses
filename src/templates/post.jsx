@@ -92,15 +92,6 @@ export const pageQuery = graphql`
           }
         }
         body {
-          ... on PrismicPostBodyText {
-            slice_type
-            id
-            primary {
-              text {
-                html
-              }
-            }
-          }
           ... on PrismicPostBodyQuote {
             slice_type
             id
