@@ -1,0 +1,29 @@
+{
+  "eslint.validate": [
+    {
+      "language": "html",
+      "autoFix": true
+    },
+    {
+      "language": "javascriptreact",
+      "autoFix": true
+    },
+    {
+      "language": "json",
+      "autoFix": true
+    },
+    {
+      "language": "javascript",
+      "autoFix": true
+    }
+  ],
+  "editor.formatOnSave": false,
+  "eslint.autoFixOnSave": true,
+  "vetur.validation.template": true,
+  "javascript.format.enable": false,
+  "prettier.eslintIntegration": true,
+  "prettier.disableLanguages": [],
+  "css.validate": false,
+  "less.validate": false,
+  "scss.validate": false
+}

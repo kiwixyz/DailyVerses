@@ -31,13 +31,6 @@ const htmlSerializer = (type, element, content) => {
       if (element.data.label === 'quote') {
         return `<blockquote><p>${content}</p></blockquote>`
       }
-      // Use the code block for labels that are in the array of "codeBlock"
-      // Choose the right PrismJS highlighting with the label name
-      if (codeBlock.includes(element.data.label)) {
-        return `<pre class="language-${element.data.label}"><code class="language-${
-          element.data.label
-        }">${Prism.highlight(content, Prism.languages[element.label])}</code></pre>`
-      }
       return null
     }
     case Elements.preformatted: {

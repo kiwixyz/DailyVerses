@@ -34,25 +34,6 @@
       "fieldset" : "Slice zone",
       "config" : {
         "choices" : {
-          "code_block" : {
-            "type" : "Slice",
-            "fieldset" : "Code Block",
-            "description" : "Longer Code Block. Use labels inside it!",
-            "icon" : "code",
-            "display" : "list",
-            "non-repeat" : {
-              "code-block" : {
-                "type" : "StructuredText",
-                "config" : {
-                  "multi" : "preformatted",
-                  "label" : "code-block",
-                  "placeholder" : "Paste your code here with a label",
-                  "labels" : [ "javascript", "css", "scss", "jsx", "bash", "json", "diff", "markdown", "graphql" ]
-                }
-              }
-            },
-            "repeat" : { }
-          },
           "quote" : {
             "type" : "Slice",
             "fieldset" : "Quote",

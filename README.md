@@ -1,4 +1,4 @@
-# Gatsby Starter: Prismic
+# verses.nz
 
 A typography-heavy & light-themed Gatsby Starter which uses the Headless CMS [Prismic](https://prismic.io/).
 

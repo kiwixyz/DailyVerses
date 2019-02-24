@@ -101,15 +101,6 @@ export const pageQuery = graphql`
               }
             }
           }
-          ... on PrismicPostBodyCodeBlock {
-            slice_type
-            id
-            primary {
-              code_block {
-                html
-              }
-            }
-          }
           ... on PrismicPostBodyQuote {
             slice_type
             id
@@ -117,21 +108,6 @@ export const pageQuery = graphql`
               quote {
                 html
                 text
-              }
-            }
-          }
-          ... on PrismicPostBodyImage {
-            slice_type
-            id
-            primary {
-              image {
-                localFile {
-                  childImageSharp {
-                    fluid(maxWidth: 1200, quality: 90) {
-                      ...GatsbyImageSharpFluid_withWebp
-                    }
-                  }
-                }
               }
             }
           }
@@ -162,3 +138,21 @@ export const pageQuery = graphql`
     }
   }
 `
+
+/*
+... on PrismicPostBodyImage {
+  slice_type
+  id
+  primary {
+    image {
+      localFile {
+        childImageSharp {
+          fluid(maxWidth: 1200, quality: 90) {
+            ...GatsbyImageSharpFluid_withWebp
+          }
+        }
+      }
+    }
+  }
+}
+*/
