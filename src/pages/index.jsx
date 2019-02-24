@@ -115,9 +115,9 @@ class Index extends Component {
           </HeroInner>
         </Hero>
         <IndexWrapper id={website.skipNavId} style={{ paddingTop: '2rem', paddingBottom: '2rem' }}>
-          <Title style={{ marginTop: '4rem' }}>Recent posts</Title>
+          <Title style={{ marginTop: '4rem' }}>Talks</Title>
           <Listing posts={posts.edges} />
-          <Title style={{ marginTop: '8rem' }}>Recent projects</Title>
+          <Title style={{ marginTop: '8rem' }}>What's on</Title>
           <ProjectListing>
             {projects.edges.map(project => (
               <li key={project.node.primary.label.text}>
